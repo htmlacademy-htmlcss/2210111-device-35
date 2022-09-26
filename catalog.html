@@ -12,7 +12,7 @@
           <label class="search-on-site" name="search-on-site">
             <input class="search-on-site" type="text" name="search-on-site" id="search-on-site" placeholder="Поиск по сайту">
           </label>
-          <button class="button search-on-site-button" type="button">Найти</button>
+          <button class="button search-on-site-button">Найти</button>
         </form>
         <ul class="navigation-list-user">
           <li class="navigation-item">
@@ -28,7 +28,30 @@
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
-        <h2 class="">Каталог товаров</h2>
+        <h2 class="catalog-title">Каталог товаров</h2>
+        <button class="catalog-button"></button>
+        <div class="catalog">
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <a class="catalog-link" href="#">Виртуальная реальность</a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-link" href="catalog.html">Моноподы для селфи</a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-link" href="#">Экшн-камеры</a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-link" href="#">Умные часы</a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -83,7 +106,6 @@
               Розовый
             </label>
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Bluetooth</legend>
             <label class="control">
@@ -114,6 +136,7 @@
               <h3 class="product-card-title">Любительская селфи-палка</h3>
             </a>
             <b class="product-card-price">500 ₽</b>
+            <a class="button" href="#">Подробнее</a>
           </li>
           <li class="product-list-item">
             <a class="product-card-link" href="#">
@@ -121,6 +144,7 @@
               <h3 class="product-card-title">Профессиональная селфи-палка</h3>
             </a>
             <b class="product-card-price">1 500 ₽</b>
+            <a class="button" href="#">Подробнее</a>
           </li>
           <li class="product-list-item">
             <a class="product-card-link" href="#">
@@ -128,6 +152,7 @@
               <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
             </a>
             <b class="product-card-price">2 500 ₽</b>
+            <a class="button" href="#">Подробнее</a>
           </li>
           <li class="product-list-item">
             <a class="product-card-link" href="#">
@@ -135,6 +160,7 @@
               <h3 class="product-card-title">Селфи-палка «Следуй за мной» </h3>
             </a>
             <b class="product-card-price">1 500 ₽</b>
+            <a class="button" href="#">Подробнее</a>
           </li>
         </ul>
         <button class="button pagination-load-more" type="button">Загрузить ещё</button>
