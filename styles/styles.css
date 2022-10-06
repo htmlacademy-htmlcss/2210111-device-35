@@ -169,18 +169,12 @@ ul {
 
 /*main*/
 
-.breadcrumbs-link {
-  font-size: 16px;
-  line-height: 20px;
-}
 .catalog-himl-title {
   font-size: 16px;
   line-height: 19px;
   color: black;
 }
-.catalog-filter-title {
-  font-weight: 700;
-  line-height: 20px;
+.catalog-filter-group .product-card-link {
   color: black;
 }
 .control-input {
@@ -198,27 +192,17 @@ ul {
 .product-card-price {
   line-height: 21px;
 }
-.pagination-load-more {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 19px;
-  color: black;
+.product-card .catalog-himl-title {
   background-color: #E5E5E5;
-  text-transform: uppercase;
 }
 .pagination {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  line-height: 21px;
   background-color: #EBEBEB;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.pagination a {
-  color: inherit;
-  text-decoration: inherit;
 }
 .pagination-link {
+  font-size: 16px;
+  color: #444444;
   line-height: 20px;
+}
+.pagination-prev {
+  color: #444444;
 }
