@@ -26,7 +26,14 @@
 
 /*Общие стили*/
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -79,25 +86,85 @@ ul {
 
 /*header*/
 
+.page-header {
+  margin: 40px 140px;
+  margin-bottom: 0;
+}
 .search-on-site {
   font-size: 16px;
   line-height: 20px;
   color: black;
-}
-.page-header {
   background-color: #FFE17F;
+}
+.navigation {
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 0;
+  margin: 0 auto;
+  background-color: #FFE17F;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+}
+.search-on-site {
+  width: 359px;
+}
+.navigation-list-user {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+.user-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 60px;
+  width: 1040px;
+}
+.compare {
+  margin-right: 61px;
+  margin-left: auto;
 }
 .navigation-link{
   text-align: center;
+}
+.title-container {
+  display: flex;
+  flex-direction: row;
+}
+.catalog-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 60px;
+  width: 1040px;
+}
+.navigation-list-header {
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+}
+.catalog {
+  display: flex;
+  flex-direction: row;
+}
+.catalog-button {
+  background: url("/images/catalog-icon.svg") no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin-left: 15px;
 }
 .catalog-link {
   font-size: 16px;
   line-height: 18px;
 }
-.slider-and-description {
-  background-color: #ffffff;
-}
 .search-on-site-button {
+  width: 160px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -120,6 +187,10 @@ ul {
 }
 
 /*main*/
+
+.main-page {
+  flex-grow: 1;
+}
 
 .service-button-current {
   background-color: black;
@@ -169,6 +240,12 @@ ul {
 
 /*main*/
 
+.main-inner {
+  background-color: #F0F0F0;
+}
+.product-card {
+  background-color: #FFFFFF;
+}
 .catalog-himl-title {
   font-size: 16px;
   line-height: 19px;
