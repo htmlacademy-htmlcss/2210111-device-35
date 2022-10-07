@@ -91,7 +91,7 @@
         </div>
         <ul class="list-of-slides">
           <li class="slide-item">
-            <button class="slide-button">
+            <button class="slide-button-current">
               <span class="visually-hidden">1 слайд</span>
             </button>
           </li>
@@ -179,12 +179,12 @@
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
           </div>
-          <div class="garanty-description">
+          <div class="garanty-description visually-hidden">
             <h3 class="service-title">Гарантия</h3>
             <p class="description">
             </p>
           </div>
-          <div class="credit-description">
+          <div class="credit-description visually-hidden">
             <h3 class="service-title">Кредит</h3>
             <p class="description">
             </p>
@@ -204,41 +204,47 @@
           </span>
         </a>
       </section>
-      <section class="about-us">
-        <h2 class="big-title">О нас</h2>
-        <p class="description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p class="description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-        <h3 class="visually-hidden">Способы доставки</h3>
-        <ul class="delivery-methods">
-          <li class="delivery-methods-item">Меловые линии</li>
-          <li class="delivery-methods-item">СДИК</li>
-          <li class="delivery-methods-item">ТоксБерри</li>
-        </ul>
-        <a class="button">Подробнее о нас</a>
-      </section>
-      <section class="contacts-section">
-        <h2 class="big-title">Контакты</h2>
-        <p class="description">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
-        <h3 class="little-title">Интернет-магазин «Девайс»</h3>
-        <address class="contacts-address">
-          <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
-        <h3 class="little-title">Время работы</h3>
-        <ul class="work-time-list">
-          <li class="work-time-list-item">пн—пт: с 10:00 до 22:00</li>
-          <li class="work-time-list-item">сб—вс: с 10:00 до 19:00</li>
-        </ul>
-        <a class="button">Напишите нам</a>
-      </section>
+      <div class="about-us-section">
+        <section class="about-us">
+          <h2 class="big-title">О нас</h2>
+          <p class="description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+          <h3 class="visually-hidden">Способы доставки</h3>
+          <ul class="delivery-methods">
+            <li class="delivery-methods-item">Меловые линии</li>
+            <li class="delivery-methods-item">СДИК</li>
+            <li class="delivery-methods-item">ТоксБерри</li>
+          </ul>
+          <a class="button">Подробнее о нас</a>
+        </section>
+        <section class="contacts-section">
+          <h2 class="big-title">Контакты</h2>
+          <p class="description">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+          <h3 class="little-title">Интернет-магазин «Девайс»</h3>
+          <address class="contacts-address">
+            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+          <h3 class="little-title">Время работы</h3>
+          <ul class="work-time-list">
+            <li class="work-time-list-item">пн—пт: с 10:00 до 22:00</li>
+            <li class="work-time-list-item">сб—вс: с 10:00 до 19:00</li>
+          </ul>
+          <a class="button">Напишите нам</a>
+        </section>
+      </div>
       <section class="subscribe-section">
-        <h2 class="big-title">Подпишитесь на рассылку</h2>
-        <p class="description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <input class="email-field" type="email" placeholder="Ваш e-mail">
-          <input class="button subscribe-button" type="submit" value="Подписаться">
-        </form>
-        <p class="free-description">Это бесплатно</p>
+        <div class="description-container">
+          <h2 class="big-title">Подпишитесь на рассылку</h2>
+          <p class="description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+        </div>
+        <div class="subscribe-container">
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <input class="email-field" type="email" placeholder="Ваш e-mail">
+            <input class="button subscribe-button" type="submit" value="Подписаться">
+          </form>
+          <p class="free-description">Это бесплатно</p>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -248,7 +254,7 @@
           <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
       </section>
-      <section class="page-footer-navigation">
+      <section class="page=footer-navigation">
         <nav class="footer-navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -262,19 +268,19 @@
             </li>
           </ul>
           <ul class="footer-social-list">
-            <li class="footer-social-list-item">
+            <li class="footer-social-list-item-tel">
               <a class="footer-social-list-link" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Telegram</span>
+                <span class="non-visible">Telegram</span>
               </a>
             </li>
-            <li class="footer-social-list-item">
+            <li class="footer-social-list-item-yt">
               <a class="footer-social-list-link" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">YouTube</span>
+                <span class="non-visible">YouTube</span>
               </a>
             </li>
-            <li class="footer-social-list-item">
+            <li class="footer-social-list-item-tw">
               <a class="footer-social-list-link" href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Twitter</span>
+                <span class="non-visible">Twitter</span>
               </a>
             </li>
           </ul>

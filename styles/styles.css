@@ -31,6 +31,7 @@ html {
 }
 
 body {
+  width: auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -83,11 +84,14 @@ ul {
   font-weight: 700;
   font-size: 24px;
 }
+.non-visible {
+  visibility: hidden;
+}
 
 /*header*/
 
 .page-header {
-  margin: 0 140px;
+  margin: 40px 140px;
   margin-bottom: 0;
 }
 .search-on-site {
@@ -98,7 +102,7 @@ ul {
 }
 .navigation {
   display: flex;
-  width: 1200px;
+  width: auto;
   height: auto;
   flex-direction: column;
   align-items: flex-start;
@@ -221,21 +225,101 @@ ul {
   width: 250px;
   height: 135px;
   color: #FFFFFF;
-  margin: 0 auto;
+  margin: auto auto;
 }
 .main-page {
-  width: 1440px;
+  width: 1440pxS;
   margin: 0 auto;
   flex-grow: 1;
+}
+.slider-and-description {
+  display: flex;
+  flex-direction: row;
+  margin: 0 170px;
+}
+.slider-button {
+  width: 20px;
+  height: 60px;
+  align-self: center;
+}
+.left-button {
+  background: url("/images/arrow-left.svg") no-repeat;
+  border: none;
+}
+.right-button {
+  background: url("/images/arrow-right.svg") no-repeat;
+  border: none;
+}
+.slider {
+  display: flex;
+  flex-direction: row;
+}
+.first-slide-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+.list-of-slides {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  justify-content: center;
+}
+.catalog-navigation {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  margin: 0 30px;
+  justify-content: center;
+}
+.catalog-navigation-list {
+  display: flex;
+  flex-direction: row;
+  margin: 100px 30px;
+}
+.catalog-navigation-item {
+  margin: 0 40px;
+}
+.delivery-garanty-credit {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 140px;
+}
+.service-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 115px;
 }
 .service-button-current {
   background-color: black;
   color: #FFE17F;
 }
+.rare-product-delivery {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 70px 140px;
+}
 .rare-delivery-title {
   line-height: 23px;
   font-size: 20px;
   color: black;
+}
+.about-us-section {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 70px 140px;
+}
+.contacts-section {
+  margin-left: 130px;
 }
 .delivery-methods-item {
   font-weight: 700;
@@ -248,6 +332,27 @@ ul {
 .contacts-phone {
   font-style: normal;
   color: inherit;
+}
+.subscribe-section {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+.description-container {
+  display: flex;
+  flex-direction: row;
+  margin: 75px 150px;
+}
+.subscribe-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto 140px;
+  align-items: center;
+}
+.free-description {
+  margin-left: auto;
 }
 .subscribe-button {
   background-color: #C4C4C4;
@@ -263,7 +368,7 @@ ul {
   height: 321px;
   display: flex;
   flex-direction: row;;
-  padding: 0 140px;
+  margin: 0 auto;
   background-color: #444444;
 }
 .contacts {
@@ -275,9 +380,11 @@ ul {
   color: #ffffff;
 }
 .address {
+  width: 240px;
   display: flex;
   flex-direction: column;
-  margin: 62px 140px;
+  justify-content: space-evenly;
+  margin: 0 140px;
 }
 .page-footer-navigation {
   width: 450px;
@@ -287,6 +394,41 @@ ul {
 }
 .navigation-list {
   width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 140px;
+}
+.footer-social-list-item-tel {
+  background: url("/images/telegram-logo.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+}
+.footer-social-list-item-yt {
+  background: url("/images/you-tube-logo.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+}
+.footer-social-list-item-tw {
+  background: url("/images/twitter-logo.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+}
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.phone-number-and-html {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-left: 100px;
+  width: 180px;
+  justify-content: space-evenly;
+}
+.phone-number {
+  width: 175px;
   display: flex;
   flex-direction: row;
 }
