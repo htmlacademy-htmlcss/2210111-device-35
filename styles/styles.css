@@ -31,10 +31,6 @@ html {
 }
 
 body {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -51,6 +47,11 @@ img {
 }
 ul {
   list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
 }
 .big-title {
   font-family: "Raleway", sans-serif;
@@ -101,13 +102,12 @@ ul {
   background-color: #FFE17F;
 }
 .navigation {
-  display: flex;
-  width: auto;
-  height: auto;
+  height: 300px;
   flex-direction: column;
-  align-items: flex-start;
   gap: 30px;
   margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
   background-color: #FFE17F;
 }
 .search-form {
@@ -119,33 +119,27 @@ ul {
 }
 .navigation-list-user {
   display: flex;
-  width: 500px;
-  justify-content: space-between;
+  margin-left: 20px;
+  gap: 50px;
 }
 .user-menu {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0 60px;
-  width: 1040px;
 }
-.compare {
-  margin-right: 61px;
+.cart-list {
+  display: flex;
   margin-left: auto;
+  gap: 60px;
 }
 .navigation-link{
   text-align: center;
 }
 .title-container {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 .catalog-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin: 0 60px;
-  width: 1040px;
 }
 .navigation-list-header {
   width: 480px;
@@ -153,11 +147,9 @@ ul {
   justify-content: space-between;
 }
 .catalog {
-  width: 1160px;
   display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  margin-bottom: 30px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .f-st-column{
   width: 230px;
@@ -212,12 +204,10 @@ ul {
 
 /*main*/
 
-.number {
+.number-container {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
-  margin-top: 50px;
-  margin-left: 900px;
+  margin-top: auto;
 }
 .slider-number {
   font-weight: 700;
@@ -225,17 +215,16 @@ ul {
   width: 250px;
   height: 135px;
   color: #FFFFFF;
-  margin: auto auto;
+  margin-top: 60px;
 }
 .main-page {
-  width: 1440px;
   margin: 0 auto;
   flex-grow: 1;
 }
 .slider-and-description {
   display: flex;
   flex-direction: row;
-  margin: 0 170px;
+  margin: 0 140px;
 }
 .slider-button {
   width: 20px;
@@ -257,54 +246,56 @@ ul {
 .first-slide-description {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-left: 40px;
   margin-bottom: 40px;
 }
-.list-of-slides {
+.slider-button-container {
   display: flex;
-  flex-direction: row;
-  margin-top: auto;
+  align-items: center;
   justify-content: center;
 }
-.catalog-navigation {
-  width: auto;
+.list-of-slides {
+  display: flex;
+}
+.main-page-header {
   display: flex;
   flex-direction: row;
-  margin: 0 30px;
-  justify-content: center;
+  margin-right: 140px;
+  margin-left: 140px;
+  margin-top: 70px;
 }
 .catalog-navigation-list {
   display: flex;
   flex-direction: row;
-  margin: 100px 30px;
+  flex-wrap: wrap;
 }
 .catalog-navigation-item {
-  margin: 0 40px;
+  margin-right: 40px;
 }
 .delivery-garanty-credit {
-  width: auto;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin: 0 140px;
+  margin-top: 70px;
+  margin-left: 140px;
+  margin-right: 140px;
 }
 .service-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-right: 115px;
+  justify-content: space-between;
+  margin-right: 125px;
 }
 .service-button-current {
   background-color: black;
   color: #FFE17F;
 }
 .rare-product-delivery {
-  width: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   margin: 70px 140px;
+  background-color: #F0F0F0;
 }
 .rare-delivery-title {
   line-height: 23px;
@@ -314,7 +305,6 @@ ul {
 .about-us-section {
   width: auto;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   margin: 70px 140px;
 }
@@ -334,7 +324,6 @@ ul {
   color: inherit;
 }
 .subscribe-section {
-  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -343,7 +332,19 @@ ul {
 .description-container {
   display: flex;
   flex-direction: row;
-  margin: 75px 150px;
+}
+.subscribe-tittle {
+  display: flex;
+  margin-top: 64px;
+  margin-left: 147px;
+  margin-right: 252px;
+  flex-wrap: wrap;
+}
+.subscribe-description {
+  display: flex;
+  flex-direction: row;
+  margin-top: 74px;
+  margin-right: 133px;
 }
 .subscribe-container {
   display: flex;
@@ -364,11 +365,11 @@ ul {
 /*footer*/
 
 .page-footer {
-  width: 100%;
-  height: 321px;
   display: flex;
-  flex-direction: row;;
+  justify-content: space-between;
   margin: 0 auto;
+  padding-left: 140px;
+  padding-right: 140px;
   background-color: #444444;
 }
 .contacts {
@@ -384,20 +385,21 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 0 140px;
+  margin-top: 62px;
+  margin-bottom: 72px;
 }
 .page-footer-navigation {
   width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 90px;
+  margin-bottom: 60px;
 }
 .navigation-list {
   width: 450px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  margin-top: 140px;
 }
 .footer-social-list-item-tel {
   background: url("/images/telegram-logo.svg") no-repeat;
@@ -416,16 +418,16 @@ ul {
 }
 .footer-social-list {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  gap: 20px;
 }
 .phone-number-and-html {
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
-  margin-left: 100px;
+  justify-content: space-between;
   width: 180px;
-  justify-content: space-evenly;
+  margin-top: 110px;
+  margin-bottom: 65px;
 }
 .phone-number {
   width: 175px;
@@ -437,6 +439,10 @@ ul {
 
 /*header*/
 
+.second-page .navigation {
+  height: auto;
+  padding-bottom: 30px;
+}
 .page-header {
   background-color: #ffffff;
 }
