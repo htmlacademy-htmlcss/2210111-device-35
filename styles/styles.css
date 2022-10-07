@@ -228,7 +228,7 @@ ul {
   margin: auto auto;
 }
 .main-page {
-  width: 1440pxS;
+  width: 1440px;
   margin: 0 auto;
   flex-grow: 1;
 }
@@ -437,15 +437,44 @@ ul {
 
 /*header*/
 
+.page-header {
+  background-color: #ffffff;
+}
+
 /*main*/
 
 .main-inner {
   display: flex;
-  width: 1440px;
-  margin: 0 auto;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+  padding: 60px 200px;
   background-color: #F0F0F0;
 }
+.title-and-breadcrumbs {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.breadcrumbs-item {
+  margin-left: 40px;
+}
+.product-filtration {
+  display: flex;
+  flex-direction: column;
+}
+.sort {
+  display: flex;
+  flex-direction: row;
+}
 .product-card {
+  display: flex;
+  flex-direction: column;
   background-color: #FFFFFF;
 }
 .catalog-himl-title {
@@ -475,6 +504,12 @@ ul {
   background-color: #E5E5E5;
 }
 .pagination {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-between;
+  margin-top: auto;
   background-color: #EBEBEB;
 }
 .pagination-link {
