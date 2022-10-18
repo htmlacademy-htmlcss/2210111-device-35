@@ -59,6 +59,7 @@ ul {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin-bottom: 35px;
   color: black;
 }
 .link {
@@ -74,6 +75,7 @@ ul {
   background-color: #FFE17F;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 }
 .simple-title {
   font-family: "Raleway", sans-serif;
@@ -88,7 +90,30 @@ ul {
 .non-visible {
   visibility: hidden;
 }
-
+svg {
+  margin-right: 12px;
+}
+.slide-button {
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+}
+.slide-item:not(:last-of-type) {
+  margin-right: 20px;
+}
+.slide-button-current {
+  background-color: black;
+}
+.catalog-navigation-item {
+  width: 160px;
+  height: 250px;
+}
+.catalog-svg {
+  background-color: #FFE17F;
+  margin-bottom: 33px;
+}
 /*header*/
 
 .page-header {
@@ -100,12 +125,17 @@ ul {
   line-height: 20px;
   color: black;
   background-color: #FFE17F;
+  border-right: none;
+  background-image: url('../images/search-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 10px center;
 }
 .navigation {
-  height: 300px;
+  height: 270px;
   flex-direction: column;
   gap: 30px;
   margin: 0 auto;
+  padding-top: 25px;
   padding-left: 60px;
   padding-right: 60px;
   background-color: #FFE17F;
@@ -115,6 +145,8 @@ ul {
   align-items: center;
 }
 .search-on-site {
+  padding-left: 40px;
+  height: 40px;
   width: 359px;
 }
 .navigation-list-user {
@@ -130,7 +162,7 @@ ul {
   margin-left: auto;
   gap: 60px;
 }
-.navigation-link{
+.navigation-link {
   text-align: center;
 }
 .title-container {
@@ -180,12 +212,14 @@ ul {
   line-height: 18px;
 }
 .search-on-site-button {
+  height: 40px;
   width: 160px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: black;
   background-color: #FFE17F;
+  text-transform: none;
 }
 .specification-table {
   gap: 12px;
@@ -204,6 +238,10 @@ ul {
 
 /*main*/
 
+.navigation-logo-header {
+  position: absolute;
+  top: 20px;
+}
 .number-container {
   display: flex;
   justify-content: flex-end;
@@ -286,6 +324,24 @@ ul {
   margin-left: 140px;
   margin-right: 140px;
 }
+.service-description {
+  display: flex;
+  flex-direction: row;
+}
+.deliveri-description {
+  margin-right: 110px;
+}
+.delivery-icon {
+  margin-top: 60px;
+}
+.service-button-current {
+  width: 280px;
+}
+.service-button {
+  width: 160px;
+  border: none;
+  margin-right: 120px;
+}
 .service-list {
   display: flex;
   flex-direction: column;
@@ -302,13 +358,26 @@ ul {
 .rare-product-delivery {
   display: flex;
   justify-content: space-between;
-  margin: 70px 140px;
+  margin-top: 140px;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-bottom: 70px;
   background-color: #F0F0F0;
 }
 .rare-delivery-title {
+  margin-top: 45px;
   line-height: 23px;
   font-size: 20px;
   color: black;
+}
+.rare-product-delivery-link {
+  background-color: #FFE17F;
+}
+.rare-product-delivery-icon {
+  margin: 40px 40px 30px 42px;
+}
+.faq-icon {
+  margin: 35px 42px 30px 42px;
 }
 .about-us-section {
   width: auto;
