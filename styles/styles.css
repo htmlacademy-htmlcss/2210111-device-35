@@ -152,7 +152,7 @@ svg {
 .navigation-list-user {
   display: flex;
   margin-left: 20px;
-  gap: 50px;
+  gap: 30px;
 }
 .user-menu {
   display: flex;
@@ -160,7 +160,7 @@ svg {
 .cart-list {
   display: flex;
   margin-left: auto;
-  gap: 60px;
+  gap: 15px;
 }
 .navigation-link {
   text-align: center;
@@ -385,6 +385,10 @@ svg {
   justify-content: center;
   margin: 70px 140px;
 }
+.delivery-methods-item {
+  margin-bottom: 25px;
+  list-style: inside;
+}
 .contacts-section {
   margin-left: 130px;
 }
@@ -414,7 +418,22 @@ svg {
   margin-top: 64px;
   margin-left: 147px;
   margin-right: 252px;
+  margin-bottom: 144px;
   flex-wrap: wrap;
+}
+.email-field {
+  width: 560px;
+  height: 55px;
+  margin-bottom: 55px;
+  margin-right: 0;
+  background-color: #F0F0F0;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.subscribe-button {
+  width: 250px;
+  height: 60px;
+  margin-left: 0;
 }
 .subscribe-description {
   display: flex;
@@ -429,10 +448,16 @@ svg {
   align-items: center;
 }
 .free-description {
+  width: 160px;
+  padding-left: 20px;
   margin-left: auto;
+  margin-bottom: 70px;
+  background-image: url('../images/tick-big.svg');
+  background-repeat: no-repeat;
+  background-position: 0 center;
 }
 .subscribe-button {
-  background-color: #C4C4C4;
+  background-color: #F0F0F0;
 }
 .subscribe-section {
   background-color: #F0F0F0;
@@ -553,6 +578,9 @@ svg {
   justify-content: flex-start;
   gap: 36px;
 }
+.vector {
+  margin-left: 35px;
+}
 .product-filtration {
   width: 320px;
   display: flex;
@@ -564,11 +592,16 @@ svg {
   flex-wrap: wrap;
 }
 .catalog-filter {
-  width: 139px;
+  width: 135px;
   flex-grow: 1;
+}
+.filter-button {
+  border: none;
+  width: 140px;
 }
 .catalog-filter-group {
   margin-bottom: 35px;
+  border: none;
 }
 .card-container {
   display: flex;
@@ -580,6 +613,12 @@ svg {
   padding-right: 30px;
   display: flex;
   flex-direction: row;
+}
+.page-next {
+  margin-left: auto;
+}
+.page-last {
+  margin-right: 30px;
 }
 .product-card {
   width: auto;

@@ -18,7 +18,7 @@
           </form>
           <ul class="navigation-list-user">
             <li class="sign-in">
-              <a class="link navigation-link" href="#">Коля Петухов</a>
+              <svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 12h13a6.3 6.3 0 0 0-4.7-5.5c1-.6 1.7-1.7 1.7-3C11 1.6 9.4 0 7.5 0A3.5 3.5 0 0 0 4 3.5c0 1.3.7 2.4 1.7 3A6.3 6.3 0 0 0 1 12Z" fill="#000"/></svg><a class="link navigation-link" href="#">Коля Петухов</a>
             </li>
             <li class="sign-out">
               <a class="link navigation-link" href="#">Выйти</a>
@@ -26,10 +26,11 @@
           </ul>
           <ul class="cart-list">
             <li class="navigation-item">
-              <a class="link navigation-link" href="#">Сравнить</a>
+              <svg width="10" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000"><path d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h10v12H0z"/></clipPath></defs></svg><a class="link navigation-link" href="#">Сравнить</a>
             </li>
             <li class="navigation-item">
               <span class="cart">2</span>
+              <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
               <a class="link navigation-link" href="#">Корзина</a>
             </li>
           </ul>
@@ -88,9 +89,15 @@
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="link control-input" href="index.html">Главная</a>
+              <svg class="vector" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.79999 3.59995L0.799994 0.599951C0.599994 0.399951 0.299994 0.399951 0.0999939 0.599951C-6.10203e-06 0.799951 -6.10203e-06 1.19995 0.0999939 1.39995L2.69999 3.99995L0.0999939 6.59995C-6.10203e-06 6.79995 -6.10203e-06 7.09995 0.0999939 7.29995C0.199994 7.39995 0.399994 7.49995 0.499994 7.49995C0.599994 7.49995 0.799994 7.39995 0.899994 7.39995L3.89999 4.39995C3.89999 4.29995 3.99999 4.09995 3.99999 3.99995C3.99999 3.89995 3.89999 3.69995 3.79999 3.59995Z" fill="black"/>
+              </svg>
             </li>
             <li class="breadcrumbs-item">
               <a class="link control-input" href="#">Каталог товаров</a>
+              <svg class="vector" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.79999 3.59995L0.799994 0.599951C0.599994 0.399951 0.299994 0.399951 0.0999939 0.599951C-6.10203e-06 0.799951 -6.10203e-06 1.19995 0.0999939 1.39995L2.69999 3.99995L0.0999939 6.59995C-6.10203e-06 6.79995 -6.10203e-06 7.09995 0.0999939 7.29995C0.199994 7.39995 0.399994 7.49995 0.499994 7.49995C0.599994 7.49995 0.799994 7.39995 0.899994 7.39995L3.89999 4.39995C3.89999 4.29995 3.99999 4.09995 3.99999 3.99995C3.99999 3.89995 3.89999 3.69995 3.79999 3.59995Z" fill="black"/>
+              </svg>
             </li>
             <li class="breadcrumbs-item">
               <a class="link control-input" href="">Моноподы для селфи</a>
@@ -130,13 +137,13 @@
             <label class="control">
               <input class="control-input" type="radio" name="Bluetooth" checked>
               Есть
-            </label>
+            </label><br>
             <label class="control">
               <input class="control-input" type="radio" name="Bluetooth">
               Нет
             </label>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
       <div class="card-container">
@@ -147,8 +154,8 @@
           <option value="cheap">Дешёвые</option>
           <option value="expensive">Дорогие</option>
         </select>
-        <a href="#" class="page-last"></a>
-        <a href="#" class="page-next"></a>
+        <a href="#" class="page-next"><svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".2" clip-path="url(#a)"><path d="m6 0 5.5 10H.5" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(.5)" d="M0 0h11v10H0z"/></clipPath></defs></svg></a>
+        <a href="#" class="page-last"><svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".2" clip-path="url(#a)"><path d="M6 10 .5 0h11" fill="#000"/></g><defs><clipPath id="a"><path fill="#fff" transform="rotate(180 5.8 5)" d="M0 0h11v10H0z"/></clipPath></defs></svg></a>
       </section>
       <div class="product-card">
         <ul class="product-list">
