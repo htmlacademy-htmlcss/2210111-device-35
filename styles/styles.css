@@ -76,6 +76,10 @@ ul {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .simple-title {
   font-family: "Raleway", sans-serif;
@@ -132,6 +136,7 @@ svg {
 }
 .navigation {
   height: 270px;
+  width: 1040px;
   flex-direction: column;
   gap: 30px;
   margin: 0 auto;
@@ -466,6 +471,7 @@ svg {
 /*footer*/
 
 .page-footer {
+  width: 1170px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -645,6 +651,8 @@ svg {
   flex-grow: 1;
 }
 .load-more-button {
+  border-color: #968a8a;
+  background-color: #ffffff;
   flex-grow: 1;
 }
 .product-list-item {
@@ -722,4 +730,142 @@ svg {
 .pagination-button {
   margin: 25px;
   color: #444444;
+}
+.logo:hover {
+  opacity: 0.6;
+}
+.logo:active {
+  opacity: 0.4;
+}
+logo:focus {
+  border: 1px solid #AF4FFF;
+}
+.control-input:hover {
+  opacity: 0.6;
+}
+.control-input:active {
+  opacity: 0.4;
+}
+.control-input:active {
+  border: 1px solid #AF4FFF;
+}
+.subscribe-button:hover {
+  background-color: #000000;
+  color: white;
+}
+.subscribe-button:active {
+  background-color: #000000;
+  color: #b4b0b0;
+}
+.subscribe-button:focus {
+  border: 1px solid #AF4FFF;
+}
+.load-more-button:hover {
+  border-color: #000000;
+}
+.load-more-button:active {
+  opacity: 0.4;
+}
+.load-more-button:focus {
+  border: 1px solid #AF4FFF;
+}
+.product-button:hover {
+  background-color: #FFE17F;
+}
+.product-button:active {
+  background-color: #FFCC33;
+}
+.product-button:focus {
+  border: 1px solid #AF4FFF;
+}
+.select-control:hover {
+  opacity: 0.6;
+}
+.select-control:active {
+  opacity: 0.4;
+}
+.select-control:focus {
+  border: 1px solid #AF4FFF;
+}
+.email-field:hover {
+  background-color: #DCDCDC;
+}
+.email-field:focus {
+  border: 1px solid #AF4FFF;
+}
+.search-on-site-button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.search-on-site-button:active {
+  background-color: #000000;
+  color: #858585;
+}
+.footer-social-list-item-tel:hover {
+  background-color: #FFC700;
+  border-radius: 60%;
+}
+.footer-social-list-item-yt:hover {
+  background-color: #FFC700;
+  border-radius: 60%;
+}
+.footer-social-list-item-tw:hover {
+  background-color: #FFC700;
+  border-radius: 60%;
+}
+.footer-social-list-item-tel:active {
+  background-color: #927200;
+  border-radius: 60%;
+}
+.footer-social-list-item-yt:active {
+  background-color: #927200;
+  border-radius: 60%;
+}
+.footer-social-list-item-tw:active {
+  background-color: #927200;
+  border-radius: 60%;
+}
+.footer-title:hover {
+  color: #FFC700;
+  border-bottom: 1px solid #FFC700;
+}
+.footer-title:active {
+  color: #927200;
+  border-bottom: 1px solid #927200;
+}
+.footer-title:active {
+  border: 1px solid #AF4FFF;
+}
+.contacts-phone:hover {
+  color: #FFC700;
+}
+.contacts-phone:active {
+  color: #927200;
+}
+.contacts-phone:focus {
+  border: 1px solid #AF4FFF;
+}
+.html-logo:hover {
+  fill: #F0F0F0;
+}
+.html-logo:active {
+  fill: #8a8a8a;
+}
+.catalog-svg:hover {
+  background-color: #FFC700;
+}
+.catalog-svg:active {
+  opacity: 0.4;
+}
+.del-svg:hover {
+  background-color: #FFC700;
+}
+.del-svg:active {
+  opacity: 0.4;
+}
+.product-card-link {
+  margin-top: 15px;
+}
+.catalog-filter-group {
+  border-top: 2px solid black;
 }
