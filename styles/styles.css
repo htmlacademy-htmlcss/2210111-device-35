@@ -1011,3 +1011,162 @@ logo:focus {
 .t-rd-column {
   display: none;
 }
+.popover {
+  position: absolute;
+  top: 25px;
+  right: -45px;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 134px;
+  color: #FFFFFF;
+  background-color: #000000;
+  box-shadow: 0 18px 40px rgba(79, 70, 60, 0.16);
+}
+.navigation-item {
+  position: relative;
+}
+.popover-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cart-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.cart-item {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.cart-link {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+.close-cart-button {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  background-image: url('..//images/Vector.svg');
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.cart-name {
+  margin: 0;
+  margin-left: 23px;
+}
+.cart-image {
+  margin-top: 5px;
+}
+.count-and-cost {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  background-color: #444444;
+  margin: 0;
+}
+.cart-button {
+  color: black;
+  background-color: white;
+  width: 280px;
+  height: 50px;
+  margin: 20px;
+}
+.popover-cart {
+  display: none;
+}
+.navigation-item:focus-within .popover-cart {
+  display: flex;
+  flex-direction: column;
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.9);
+}
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 48px;
+  background-color: #ffffff;
+}
+.modal-order {
+  width: 920px;
+  height: auto;
+}
+.modal-close-button {
+  position: absolute;
+  padding: 80px;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 44px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/vector-black.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.names {
+  margin-right: 360px;
+}
+.field {
+  padding-left: 20px;
+  margin-right: 70px;
+  width: 360px;
+  height: 60px;
+  background-color: #f0f0f0;
+  border: none;
+}
+.name-login {
+  background-image: url('../images/sign-in-logo.svg');
+  background-repeat: no-repeat;
+  background-position: 345px center;
+}
+.email-login {
+  background-image: url('../images/mail.svg');
+  background-repeat: no-repeat;
+  background-position: 345px center;
+}
+.modal-title {
+  margin-bottom: 42px;
+}
+.order {
+  width: 540px;
+}
+.number-of-order {
+  padding-left: 50px;
+  margin-right: 0;
+  width: 60px;
+}
+.button-delete {
+  width: 60px;
+  height: 62px;
+  border: none;
+  cursor: pointer;
+}
+.name-of-fields-2nd {
+  margin-right: 450px;
+}
+.order-fields {
+  margin-bottom: 60px;
+}
+.button-add {
+  width: 60px;
+  height: 62px;
+  border: none;
+  cursor: pointer;
+}
+.modal-container-close {
+  display: none;
+}
