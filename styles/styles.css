@@ -95,11 +95,10 @@ input {
   visibility: hidden;
 }
 .slide-button {
-  border: 2px solid #000000;
   border-radius: 50%;
   cursor: pointer;
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
 }
 .slide-item:not(:last-of-type) {
   margin-right: 20px;
@@ -110,6 +109,7 @@ input {
 .catalog-navigation-item {
   width: 160px;
   height: 250px;
+  margin-bottom: 35px;
 }
 .catalog-svg {
   background-color: #FFE17F;
@@ -179,6 +179,7 @@ input {
   width: 480px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .catalog {
   display: flex;
@@ -504,6 +505,7 @@ input {
   width: 450px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer-social-list-item-tel {
   background: url("../images/telegram-logo.svg") no-repeat;
@@ -652,9 +654,6 @@ input {
   background-color: #ffffff;
   flex-grow: 1;
 }
-.product-list-item {
-  flex-grow: 1;
-}
 .catalog-himl-title {
   font-size: 16px;
   line-height: 19px;
@@ -746,9 +745,6 @@ logo:focus {
 .control-input:active {
   opacity: 0.4;
 }
-.control-input:active {
-  border: 1px solid #AF4FFF;
-}
 .subscribe-button:hover {
   background-color: #000000;
   color: white;
@@ -832,9 +828,6 @@ logo:focus {
 .footer-title:active {
   color: #927200;
   border-bottom: 1px solid #927200;
-}
-.footer-title:active {
-  border: 1px solid #AF4FFF;
 }
 .contacts-phone:hover {
   color: #FFC700;
@@ -1163,4 +1156,27 @@ logo:focus {
 }
 .modal-container-close {
   display: none;
+}
+.header-footer-link {
+  margin-right: 15px;
+}
+.service {
+  margin-bottom: 5px;
+}
+.header-link:hover {
+  opacity: 0.7;
+}
+.header-link:active {
+  opacity: 0.5;
+}
+.catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.catalog-link {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
