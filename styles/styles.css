@@ -16,13 +16,6 @@
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
-@font-face {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
-  font-display: swap;
-}
 
 /*Общие стили*/
 
@@ -715,6 +708,12 @@ input {
   color: #444444;
   line-height: 20px;
 }
+.pagination-link:active {
+  opacity: 0.1;
+}
+.pagination-button:active {
+  opacity: 0.4;
+}
 .pagination-item {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -725,10 +724,13 @@ input {
   flex-grow: 1;
   margin-left: 145px;
   margin-right: 145px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .pagination-button {
   margin: 25px;
   color: #444444;
+  list-style-type: none;
 }
 .logo:hover {
   opacity: 0.6;
@@ -945,6 +947,12 @@ logo:focus {
   display: block;
   padding-left: 30px;
 }
+.control:hover {
+  cursor: pointer;
+}
+.control-mark:focus {
+  border: 1px solid #AF4FFF;
+}
 .control-mark {
   position: absolute;
   top: 2px;
@@ -956,7 +964,7 @@ logo:focus {
 .control:hover .control-mark:hover {
   opacity: 0.7;
 }
-.control:hover .control-mark:active {
+.control:active .control-mark:active {
   opacity: 0.4;
 }
 .control-input[type="checkbox"]:checked + .control-mark::before,
@@ -1042,6 +1050,7 @@ logo:focus {
   background-image: url('..//images/Vector.svg');
   background-repeat: no-repeat;
   background-position: 0 center;
+  cursor: pointer;
 }
 .cart-name {
   margin: 0;
@@ -1063,6 +1072,7 @@ logo:focus {
   width: 280px;
   height: 50px;
   margin: 20px;
+  cursor: pointer;
 }
 .popover-cart {
   display: none;
@@ -1103,6 +1113,9 @@ logo:focus {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+.modal-close-button:active {
+  opacity: 0.5;
 }
 .names {
   margin-right: 360px;
@@ -1179,4 +1192,14 @@ logo:focus {
   flex-direction: row;
   margin-bottom: 10px;
   flex-wrap: wrap;
+}
+.filter-button:active {
+  background-color: #d6ad16;
+}
+.more-buttons:active {
+  background-color: #d6ad16;
+}
+.service-extra:active {
+  color: #E5E5E5;
+  background-color: #000000;
 }
